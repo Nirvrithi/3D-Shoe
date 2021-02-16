@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>PreLoaders</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="loading-background">
+            <div class="loading-circle"></div>
+        </div>
+ 
+        <div class="container">
+           <div class="card">
+               <div class="sneaker">
+                    <div class="circle"></div>
+                    <img src="Images/shoe.png">
+               </div>
+               <div class="info"> 
+                    <h1 class="title">Air Jordan 1</h1>
+                    <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+                    <div class="sizes">
+                        <button>39</button>
+                        <button>40</button>
+                        <button class="active">41</button>
+                        <button>42</button>
+                    </div>
+               </div>
+               <div class="purchase">
+                    <button>Purchase</button>
+               </div>
+ 
+           </div>
+        </div>
+ 
+        <script>
+            $(window).on("load", function(){
+                $(".loading-background").fadeOut(2000);
+            });
+        </script>
+        <script src="JS/script.js"></script>
+    </body>
+</html>
